@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ambientes virtuais
+venv/
+venv*/
+.venv/
+
+# PyInstaller e instaladores compilados (enviados via GitHub Releases)
+build/
+build_*/
+dist/
+dist_*/
+saida_instalador/
+
+# Bancos de dados locais e logs de usuário
+*.db
+*.db-wal
+*.db-shm
+*.db-journal
+backups_automaticos/
+erros.log
