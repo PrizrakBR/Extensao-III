@@ -3,7 +3,7 @@ Aplicação Principal - Sistema de Controle de Estoque e Agendamento de TI
 Prefeitura de Papanduva - SC
 
 Autor: Gustavo Zattar (Estagiário de TI)
-Versão: 1.5
+Versão: 1.5.1
 """
 
 import os
@@ -15,7 +15,7 @@ import customtkinter as ctk
 from tkinter import messagebox, filedialog
 import database as db
 
-VERSAO = "1.5"
+VERSAO = "1.5.1"
 
 # Importa as telas
 from dashboard    import DashboardFrame
