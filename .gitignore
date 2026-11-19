@@ -8,7 +8,7 @@ venv/
 venv*/
 .venv/
 
-# PyInstaller e instaladores compilados (enviados via GitHub Releases)
+# Pastas de build temporárias do PyInstaller e saída bruta do Inno Setup
 build/
 build_*/
 dist/

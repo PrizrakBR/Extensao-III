@@ -1,0 +1,21 @@
+TI PAPANDUVA - Sistema de Estoque e Agendamentos
+Versão 1.5 | Prefeitura de Papanduva - SC
+
+INSTALAÇÃO
+1. Copie o arquivo Setup_TI_Papanduva_v1.5.exe para o computador.
+2. Dê duplo clique, escolha "Avançar" e deixe marcada a opção
+   "Criar atalho na Área de Trabalho".
+3. Ao final, marque "Abrir o TI Papanduva agora" e clique em Concluir.
+Não precisa ser administrador, nem ter Python ou internet.
+
+ATUALIZANDO DE UMA VERSÃO ANTERIOR
+Basta executar o Setup: ele atualiza o programa e mantém os dados.
+
+DESINSTALAÇÃO
+Pelo "Adicionar ou remover programas" do Windows. Os dados não são apagados.
+
+AVISO DO WINDOWS
+O instalador não tem assinatura digital. Se aparecer "Windows protegeu seu PC",
+clique em "Mais informações" > "Executar assim mesmo".
+
+Requisitos: Windows 64 bits.

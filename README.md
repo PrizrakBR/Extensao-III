@@ -3,7 +3,7 @@
 **Sistema desktop local** desenvolvido para uso no estágio em Tecnologia da Informação da **Prefeitura Municipal de Papanduva - SC**, integrando o **Projeto de Extensão III (ADS)**.
 
 > [!TIP]
-> **Para instalar no Windows sem precisar do Python**, baixe o instalador (`Setup_TI_Papanduva_v1.5.1.exe` para Windows 7 SP1+ ou `Setup_TI_Papanduva_v1.5.exe` para Windows 10/11) na aba **Releases** deste repositório.
+> **Para instalar no Windows sem precisar do Python**, baixe o instalador (`Setup_TI_Papanduva_v1.5.1.exe` para Windows 7 SP1+ ou `Setup_TI_Papanduva_v1.5.exe` para Windows 10/11) na pasta `releases/` deste repositório (ou na aba **Releases**).
 
 ---
 
@@ -47,6 +47,7 @@ estoque_ti/
 ├── icone.ico           ← Ícone da aplicação e do instalador
 ├── ti_papanduva*.spec  ← Especificações de empacotamento (PyInstaller)
 ├── instalador/         ← Scripts do instalador (Inno Setup 6)
+├── releases/           ← Instaladores compilados (v1.5 e v1.5.1) e guias de uso
 ├── instalar.bat        ← Script de instalação de dependências
 ├── iniciar.bat         ← Script de execução local
 └── README.md           ← Este arquivo

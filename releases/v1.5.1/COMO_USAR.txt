@@ -1,0 +1,124 @@
+﻿╔══════════════════════════════════════════════════════════════════════╗
+║       TI PAPANDUVA — Sistema de Estoque e Agendamentos v1.5.1         ║
+║               Prefeitura Municipal de Papanduva - SC                ║
+╚══════════════════════════════════════════════════════════════════════╝
+
+▶ INICIANDO O SISTEMA
+─────────────────────
+  Instale com "Setup_TI_Papanduva_v1.5.1.exe" (veja LEIA-ME.txt) e abra
+  pelo atalho "TI Papanduva" na Área de Trabalho.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  CORES DE ALERTA (valem nas listas e no Painel)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  AGENDAMENTOS
+    VERMELHO = ATRASADO: a data agendada já passou e o serviço
+               não foi concluído (status Pendente ou Em andamento).
+               Serviços Concluídos ou Cancelados nunca ficam vermelhos.
+               Um serviço marcado para HOJE ainda não é atrasado.
+  ESTOQUE
+    VERMELHO = peça ZERADA (quantidade 0).
+    LARANJA  = peça ABAIXO DO MÍNIMO (quantidade igual ou menor que a
+               "quantidade mínima" cadastrada, mas maior que zero).
+    VERDE    = estoque normal.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  NAVEGAÇÃO
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  Use os botões na barra lateral esquerda:
+
+  Painel          → Resumo geral do dia
+  Agendamentos    → Serviços agendados
+  Estoque         → Peças de reposição
+  Histórico       → Registros passados
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  PAINEL PRINCIPAL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  • Cards com a contagem de serviços por status e itens em estoque.
+  • "Atrasados e próximos 7 dias": serviços ATRASADOS aparecem
+    primeiro, em vermelho; depois os dos próximos 7 dias.
+  • "Estoque": peças zeradas (vermelho) e abaixo do mínimo (laranja).
+  Clique em "Atualizar Painel" para recarregar os dados.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  AGENDAMENTOS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  CRIAR:  "＋ Novo Agendamento" → preencha Título (obrigatório),
+          Responsável, Setor, Data (DD/MM/AAAA), Hora, Prioridade
+          → "Salvar".
+  EDITAR: selecione o item → "Editar" (ou duplo clique) → "Salvar".
+  CONCLUIR: selecione → "Concluir" → descreva a solução e o tempo
+          gasto → "Confirmar Conclusão". O serviço vai para o Histórico.
+  FILTROS: seletor de Status e campo Buscar (Enter ou lupa).
+  Cores: amarelo = Pendente | azul = Em andamento | verde = Concluído
+         cinza = Cancelado | VERMELHO = Atrasado
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  ESTOQUE
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  CADASTRAR: "＋ Nova Peça" → Nome (obrigatório), Categoria,
+          Fabricante, Modelo, Quantidade, Quantidade mínima,
+          Localização → "Salvar".
+  ENTRADA: selecione a peça → "Entrada" → quantidade e motivo → "Confirmar".
+  SAÍDA:   selecione a peça → "Saída" → quantidade, destino e
+          responsável → "Confirmar".
+  EDITAR:  "Editar" (ou duplo clique). A quantidade só muda por
+          Entrada/Saída.
+  Filtro "Abaixo do mínimo" lista as peças em laranja e vermelho.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  HISTÓRICO
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  • Serviços Concluídos: lista os serviços finalizados.
+    Duplo clique abre os detalhes.
+    Se marcou como concluído por engano, selecione o item e clique em
+    "↩️ Desmarcar Conclusão" para retorná-lo aos Agendamentos
+    (a desmarcação fica registrada em Alterações em Serviços).
+  • Alterações em Serviços: registra cadastros, edições, conclusões,
+    conclusões desmarcadas e exclusões de agendamentos.
+  • Alterações no Estoque: registra cadastros, edições, entradas,
+    saídas e exclusões de peças (mesmo após excluir a peça).
+    Cores: verde = Conclusão / Entrada | amarelo = Desmarcada / Saída
+           azul = Cadastro | lilás = Edição | vermelho = Exclusão
+  Filtre por período ("De:" e "Até:" em DD/MM/AAAA), texto ou Tipo.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  BACKUP E RESTAURAÇÃO (barra lateral, parte de baixo)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  FAZER BACKUP
+    Clique em "Fazer Backup", escolha onde salvar (pendrive, pasta
+    de rede...) e confirme. Faça isso com frequência.
+
+  LANÇAR BACKUP (restaurar)
+    1. Clique em "Lançar Backup".
+    2. Escolha o arquivo de backup (.db) na janela do Windows.
+    3. O sistema mostra o que há no backup e pede confirmação.
+    4. Confirme. Os dados atuais são SUBSTITUÍDOS pelos do backup e
+       as telas são atualizadas automaticamente.
+
+    ⚠ Tudo o que foi registrado depois da data do backup é
+      substituído. Por segurança, antes de trocar, o sistema salva
+      uma cópia dos dados atuais em:
+        C:\Users\<usuário>\AppData\Local\TI_Papanduva\backups_automaticos
+      (se lançar o backup errado, lance essa cópia para voltar atrás).
+    Arquivos que não sejam backup deste sistema são recusados e nada
+    é alterado.
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  DICAS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+  • Clique no CABEÇALHO de uma coluna para ordenar a lista.
+  • O botão "Modo Escuro/Claro" alterna o tema.
+  • Os dados ficam em:
+      C:\Users\<usuário>\AppData\Local\TI_Papanduva\estoque_ti.db
+
+══════════════════════════════════════════════════════════════════════
